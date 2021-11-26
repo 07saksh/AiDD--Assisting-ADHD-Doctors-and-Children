@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="te.project.aidd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ColorMatch_level3"
+        android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Color_Instruct3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Color_Instruct2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Simon_progress"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FindMatchProgress"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".YoutubeVideo1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".YoutubeVideo2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".YoutubeVideo3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".YoutubeVideo4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".YoutubeVideo5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MakeColor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".YoutubeVideo" />
+        <activity
+            android:name=".Feedback"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".JigsawInstructActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FindMatchInstruct"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Flipcardsp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Colormatchp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Color_instruct"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SimonInstruct"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ParentNavActivity"
+            android:label="@string/title_activity_parent_nav"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ColourMatch"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Jigsaw"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SimonGame"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FindTheMatch"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChildNavActivity"
+            android:label="@string/title_activity_child_nav"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChildLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ParentLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

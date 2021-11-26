@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/colormatch"
+        android:layout_width="381dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="157dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/graph" />
+
+        <TextView
+            android:layout_width="203dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center|end"
+            android:text="\tColor Match\nProgress Report"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/findmatch"
+        android:layout_width="381dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281">
+
+
+        <ImageView
+            android:layout_width="154dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bar"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="203dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center|end"
+            android:text="\tFind the Match\nProgress Report"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/puzzle"
+        android:layout_width="381dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53">
+
+
+        <ImageView
+            android:layout_width="154dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/linebar"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="203dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center|end"
+            android:text="\t\t\t\tPuzzle\nProgress Report"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/simon"
+        android:layout_width="381dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787">
+
+
+        <ImageView
+            android:layout_width="148dp"
+            android:layout_height="103dp"
+            android:background="@drawable/simon"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="203dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center|end"
+            android:text="\t\tBlink and click\nProgress Report"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".Colormatchp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#A7F2FF"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="COLOR MATCH STATISTICS"
+               android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="SCORE GRAPH"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph2"
+                android:layout_width="367dp"
+                android:layout_height="195dp"
+                android:layout_below="@+id/textView"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="TIME GRAPH"
+                android:textStyle="bold"
+                android:layout_below="@+id/graph2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph"
+                android:layout_width="367dp"
+                android:layout_height="195dp"
+                android:layout_below="@+id/graph2"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                />
+
+
+
+            <RelativeLayout
+                android:layout_width="375dp"
+                android:layout_height="248dp"
+                android:layout_below="@+id/graph"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp">
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardview"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    app:cardBackgroundColor="#ffffff"-->
+<!--                    app:cardCornerRadius="10dp"-->
+<!--                    app:cardElevation="8dp">-->
+
+<!--                    <ProgressBar-->
+<!--                        android:id="@+id/progresss"-->
+<!--                        style="?android:attr/progressBarStyleHorizontal"-->
+<!--                        android:layout_width="160dp"-->
+<!--                        android:layout_height="219dp"-->
+<!--                        android:layout_marginTop="30dp"-->
+<!--                        android:layout_below="@+id/parent"-->
+<!--                        android:background="@drawable/circle_shape"-->
+<!--                        android:indeterminate="false"-->
+<!--                        android:progressDrawable="@drawable/circle_progress_bar"-->
+<!--                        android:textAlignment="center" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/parenttext"-->
+<!--                        android:layout_width="76dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="130dp"-->
+<!--                        android:layout_marginLeft="60dp"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textSize="24dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/parents"-->
+<!--                        android:layout_width="159dp"-->
+<!--                        android:layout_height="43dp"-->
+<!--                        android:fontFamily="serif"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Parent's Observations"-->
+<!--                        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textSize="18sp" />-->
+
+
+<!--                    <ProgressBar-->
+<!--                        android:id="@+id/docpro"-->
+<!--                        style="?android:attr/progressBarStyleHorizontal"-->
+<!--                        android:layout_width="160dp"-->
+<!--                        android:layout_height="219dp"-->
+<!--                        android:layout_below="@+id/parent"-->
+<!--                        android:layout_marginLeft="200dp"-->
+<!--                        android:layout_marginTop="30dp"-->
+<!--                        android:background="@drawable/circle_shape"-->
+<!--                        android:indeterminate="false"-->
+<!--                        android:progressDrawable="@drawable/circle_progress_bar"-->
+<!--                        android:textAlignment="center" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/doctext"-->
+<!--                        android:layout_width="76dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="260dp"-->
+<!--                        android:layout_marginTop="130dp"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textSize="24dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/doctors"-->
+<!--                        android:layout_width="159dp"-->
+<!--                        android:layout_height="43dp"-->
+<!--                        android:layout_marginLeft="200dp"-->
+<!--                        android:fontFamily="serif"-->
+<!--                        android:text="Doctor's Observations"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textSize="18sp" />-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

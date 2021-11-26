@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/back"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#A7F2FF"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="REGISTER"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Once you register, the credentials for child login are mailed to your email address"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                />
+
+            <EditText
+                android:id="@+id/edittext_childname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="28dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/child"
+                android:hint="@string/child_name"
+                android:paddingLeft="10dp" />
+
+
+            <EditText
+                android:id="@+id/edittext_username"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="28dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/user"
+                android:hint="@string/email"
+                android:paddingLeft="10dp" />
+            <!--    email here is username of parent-->
+
+            <EditText
+                android:id="@+id/edittext_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="28dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/password"
+                android:hint="@string/password"
+                android:paddingLeft="10dp"
+                android:password="true"
+                />
+
+            <EditText
+                android:id="@+id/edittext_mail"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/mail"
+                android:hint="@string/doctor_s_email"
+                android:paddingLeft="10dp" />
+
+
+
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/edittext_cnf_password"-->
+            <!--        android:layout_width="200dp"-->
+            <!--        android:layout_height="40dp"-->
+            <!--        android:layout_marginTop="20dp"-->
+            <!--        android:background="#ffffff"-->
+            <!--        android:paddingLeft="7dp"-->
+            <!--        android:drawableLeft="@drawable/password"-->
+            <!--        android:hint="@string/confirm_password"/>-->
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="142dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round"
+                android:fontFamily="serif"
+                android:text="@string/register"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/already_registered"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textview_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/login_here"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

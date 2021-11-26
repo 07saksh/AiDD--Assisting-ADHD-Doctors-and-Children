@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip cards</title>
+<!--    {{&#45;&#45; Fonts & Font-awesome icons &#45;&#45;}}-->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900%7CPacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="prettyPhoto.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="newcss.css" type="text/css"/>
+<!--    {{&#45;&#45; Jquery & Bootstrap CDN &#45;&#45;}}-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!--    {{&#45;&#45; JS & CSS for this exercise &#45;&#45;}}-->
+<!--    <script src="{{asset('pause.js')}}"></script>-->
+<!--    <link type="text/css" href="{{asset('pause.css')}}" rel="stylesheet">-->
+</head>
+<head>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script>
+	var memory_array = ['A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H','I','I','J','J','K','K','L','L'];
+	var memory_values = [];
+	var memory_tile_ids = [];
+	var tiles_flipped = 0;
+	Array.prototype.memory_tile_shuffle = function(){
+		var i = this.length, j, temp;
+		while(--i > 0){
+			j = Math.floor(Math.random() * (i+1));
+			temp = this[j];
+			this[j] = this[i];
+			this[i] = temp;
+		}
+	}
+	function newBoard(){
+		count=0;
+		tiles_flipped = 0;
+		var output = '';
+		memory_array.memory_tile_shuffle();
+		for(var i = 0; i < memory_array.length; i++){
+			output += '<div id="tile_'+i+'" onclick="memoryFlipTile(this,\''+memory_array[i]+'\')"></div>';
+		}
+		document.getElementById('memory_board').innerHTML = output;
+
+
+	}
+	function memoryFlipTile(tile,val){
+
+		// count=0;
+
+		if(tile.innerHTML == "" && memory_values.length < 2){
+			// count++;
+			tile.style.background = '#FFF';
+			tile.innerHTML = val;
+			count++;
+			if(memory_values.length == 0){
+
+				memory_values.push(val);
+				memory_tile_ids.push(tile.id);
+				// count+=2;
+			} else if(memory_values.length == 1){
+				// count++;
+				memory_values.push(val);
+				memory_tile_ids.push(tile.id);
+
+				if(memory_values[0] == memory_values[1]){
+					tiles_flipped += 2;
+					//  count+=2;
+
+					memory_values = [];
+					memory_tile_ids = [];
+
+					if(tiles_flipped == memory_array.length){
+						// count++;
+						//document.getElementById('form').submit();
+						//window.location.replace("memnext.html");
+
+
+<!--    				 swal({-->
+<!--					 	title:"Congrats!"-->
+<!--					 	text:"You cleared the board"-->
+<!--					 	icon:"success"-->
+<!--					 	timer:10000-->
+
+<!--					 });-->
+						document.getElementById('memory_board').innerHTML = "";
+						newBoard();
+					}
+				} else {
+					function flip2Back(){
+						// count+=2;
+						// count++;
+						var tile_1 = document.getElementById(memory_tile_ids[0]);
+						var tile_2 = document.getElementById(memory_tile_ids[1]);
+						tile_1.style.background = 'url(tile_bg.jpg) no-repeat';
+						tile_1.innerHTML = "";
+						tile_2.style.background = 'url(tile_bg.jpg) no-repeat';
+						tile_2.innerHTML = "";
+
+						memory_values = [];
+						memory_tile_ids = [];
+					}
+					setTimeout(flip2Back, 700);
+				}
+			}
+		}
+		document.getElementById('db_score').value =count;
+		document.getElementById('score').innerHTML =count;
+	}
+</script>
+</head>
+<body>
+<div id="main" class="wrap">
+        <section id="slider-home" class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row" style="padding:0px 0px 0px 0px;">
+                        <div class="col-4" style="margin-top:0px;padding-bottom:0px;">
+
+                            <div style="font-family: 'Cabin Sketch';font-size: 20px;">
+
+                                <input type="hidden" id="db_score" name="db_score">
+                                <p style="text-align:center; color:red; font-size:20px;"> Flips:<span id="score"></span></p>
+
+                            </div>
+                        </div>
+<!--                        <div class="col-4" style="margin-top:10px;padding-bottom:0px;">-->
+<!--                            <button value="pause" onclick="music_pause()" id="vol" class="float-right">-->
+<!--                                <i onclick="music_pause()" class="fas fa-volume-up" style="width:20px;height:20px;"></i>-->
+<!--                            </button>-->
+<!--                            <audio id="music" src="{{asset('song.mp3')}}" type="audio/mpeg"></audio><br><br>-->
+<!--                        </div>-->
+                    </div>
+<!--                    {{&#45;&#45; Template-Part &#45;&#45;}}-->
+                    <div id="memory_board" class="col-md-4">
+                    </div>
+                    <script>newBoard();</script>
+<!--                    {{&#45;&#45; Template Part &#45;&#45;}}-->
+                </div><!-- col-md-12-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section><!-- home-testimonials-->
+</div>
+<!--<script>-->
+<!--		function music_pause(){-->
+<!--	$(document).on("click",".fa-volume-up", function (e) {-->
+<!--		document.getElementById("music").pause();-->
+<!--		$(".fa-volume-up").addClass("fa-volume-off");-->
+<!--		$(".fa-volume-up").removeClass("fa-volume-up");-->
+<!--		e.stopPropagation();-->
+<!--	});-->
+
+<!--	document.getElementById("music").play();-->
+<!--	$(document).on("click", ".fa-volume-off", function (e1) {-->
+<!--		$(".fa-volume-off").addClass("fa-volume-up");-->
+<!--		$(".fa-volume-off").removeClass("fa-volume-off");-->
+<!--	});-->
+<!--	}-->
+<!--	</script>-->
+</body>
+</html>

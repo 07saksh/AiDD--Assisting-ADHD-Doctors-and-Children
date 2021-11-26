@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".FindMatchProgress">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="#A7F2FF"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="FIND THE MATCH STATISTICS"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="ACCURACY GRAPH"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/accgraph"
+        android:layout_width="363dp"
+        android:layout_height="262dp"
+        android:layout_below="@+id/textView"
+        android:layout_gravity="center" />
+
+
+
+
+</LinearLayout>

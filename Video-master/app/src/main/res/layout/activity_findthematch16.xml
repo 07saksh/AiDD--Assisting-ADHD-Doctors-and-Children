@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindTheMatch"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/back">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="414dp"
+        android:layout_height="100dp"
+        android:background="#A7F2FF"
+        android:gravity="center"
+        android:text="FIND THE MATCH"
+        android:textSize="30sp"
+        app:fontFamily="serif"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="192dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="4dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="8" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="9" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="10" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="11" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="12" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="13" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="14" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_margin="4dp"
+            android:cropToPadding="true"
+            android:onClick="checkColorShape"
+            android:padding="4dp"
+            android:tag="15" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="160dp"
+        android:background="@drawable/round"
+        android:fontFamily="serif"
+        android:onClick="checkAnswers"
+        android:text="Submit"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <TextView
+        android:id="@+id/Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="12dp"
+        android:text="Time : "
+        android:textColor="#070707"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Timer"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="serif"
+        android:text="Level :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/levelNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toStartOf="@+id/Timer"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

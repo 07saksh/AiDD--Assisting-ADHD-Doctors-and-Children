@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Flipcardsp">
+
+    <TextView
+        android:id="@+id/flip"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="#A7F2FF"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="JIGSAW STATISTICS"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/mem"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="PROBLEM SOLVING"
+        android:textStyle="bold"
+        android:layout_below="@+id/flip"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphmp"
+        android:layout_width="392dp"
+        android:layout_height="237dp"
+        android:layout_below="@+id/flip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp" />
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="375dp"-->
+<!--        android:layout_height="248dp"-->
+<!--        android:layout_below="@+id/graphmp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="10dp">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/c1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:cardBackgroundColor="#ffffff"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="8dp">-->
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progress1"-->
+<!--                style="?android:attr/progressBarStyleHorizontal"-->
+<!--                android:layout_width="160dp"-->
+<!--                android:layout_height="219dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_below="@+id/parent"-->
+<!--                android:background="@drawable/circle_shape"-->
+<!--                android:indeterminate="false"-->
+<!--                android:progressDrawable="@drawable/circle_progress_bar"-->
+<!--                android:textAlignment="center" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tst"-->
+<!--                android:layout_width="76dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="130dp"-->
+<!--                android:layout_marginLeft="60dp"-->
+<!--                android:text=""-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="24dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/parent"-->
+<!--                android:layout_width="159dp"-->
+<!--                android:layout_height="43dp"-->
+<!--                android:fontFamily="serif"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Parent's Observations"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="18sp" />-->
+
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progress2"-->
+<!--                style="?android:attr/progressBarStyleHorizontal"-->
+<!--                android:layout_width="160dp"-->
+<!--                android:layout_height="219dp"-->
+<!--                android:layout_below="@+id/parent"-->
+<!--                android:layout_marginLeft="200dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:background="@drawable/circle_shape"-->
+<!--                android:indeterminate="false"-->
+<!--                android:progressDrawable="@drawable/circle_progress_bar"-->
+<!--                android:textAlignment="center" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/ttxt"-->
+<!--                android:layout_width="76dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="260dp"-->
+<!--                android:layout_marginTop="130dp"-->
+<!--                android:text=""-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="24dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/doctor"-->
+<!--                android:layout_width="159dp"-->
+<!--                android:layout_height="43dp"-->
+<!--                android:layout_marginLeft="200dp"-->
+<!--                android:fontFamily="serif"-->
+<!--                android:text="Doctor's Observations"-->
+<!--                android:gravity="center"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="18sp" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </RelativeLayout>-->
+
+
+
+
+</RelativeLayout>

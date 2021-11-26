@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    tools:context=".Color_Instruct3">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A7F2FF"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="COLOR MATCH"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Instructions"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView4"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Level :3 "
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:layout_below="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:layout_below="@+id/textView7"
+        android:text="From the palette pick the color \n which  matches the meaning of the color. "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:text="YOU HAVE 45 SECS FOR LEVEL 3"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView9"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        />
+
+    <Button
+        android:id="@+id/tutorial_colour3"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/cm"
+        android:background="@drawable/round"
+        android:fontFamily="serif"
+        android:text="TUTORIAL"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cm"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/round"
+        android:fontFamily="serif"
+        android:text="LET'S PLAY"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

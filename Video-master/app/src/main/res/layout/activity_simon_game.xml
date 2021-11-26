@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimonGame"
+    android:background="@drawable/back"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="414dp"
+            android:layout_height="100dp"
+            android:background="#A7F2FF"
+            android:gravity="center"
+            android:text="BLINK AND CLICK"
+            android:textSize="30sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Chronometer
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Timer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintStart_toEndOf="@+id/Timer" />
+
+        <GridLayout
+            android:id="@+id/gridLayoutnew"
+            android:layout_width="392dp"
+            android:layout_height="386dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="55dp"
+            android:columnCount="3"
+            android:paddingTop="10dp"
+            android:rowCount="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.305"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/v0"
+                android:layout_width="105dp"
+                android:layout_height="98dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="13dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/v3"
+                android:layout_width="105dp"
+                android:layout_height="98dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="13dp"
+                android:cropToPadding="true"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:tag="3" />
+
+            <ImageView
+                android:id="@+id/v6"
+                android:layout_width="105dp"
+                android:layout_height="98dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_margin="13dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:tag="6" />
+
+            <ImageView
+                android:id="@+id/v1"
+                android:layout_width="105dp"
+                android:layout_height="98dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_margin="13dp"
+                android:cropToPadding="true"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/v4"
+                android:layout_width="105dp"
+                android:layout_height="98dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_margin="13dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:tag="4" />
+
+            <ImageView
+                android:id="@+id/v7"
+                android:layout_width="105dp"
+                android:layout_height="98dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_margin="13dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:tag="7" />
+
+            <ImageView
+                android:id="@+id/v2"
+                android:layout_width="105dp"
+                android:layout_height="98dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_margin="13dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+
+                android:tag="2" />
+
+            <ImageView
+                android:id="@+id/v5"
+                android:layout_width="105dp"
+                android:layout_height="98dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_margin="13dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+
+                android:tag="5" />
+
+            <ImageView
+                android:id="@+id/v8"
+                android:layout_width="105dp"
+                android:layout_height="98dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_margin="13dp"
+                android:scaleType="centerCrop"
+                android:cropToPadding="true"
+                android:padding="4dp"
+
+                android:tag="8" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/Timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:fontFamily="serif"
+            android:layout_marginTop="12dp"
+            android:text="Time : "
+            android:textColor="#070707"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="serif"
+            android:text="Watch and copy the sequence."
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/gridLayoutnew"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
